@@ -1,0 +1,80 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
+@import "https://fonts.googleapis.com/css?family=Cabin:400";
+* {
+    box-sizing: border-box;
+}
+
+html {
+background: #000;
+background-size: cover;
+font-size: 10px;
+height: 100%;
+overflow: hidden;
+position: absolute;
+text-align: center;
+width: 100%; }
+
+#logo {
+animation: logo-entry 4s ease-in;
+width: 500px;
+margin: 0 auto;
+position: relative;
+z-index: 40; }
+
+h1 {
+animation: text-glow 2s ease-out infinite alternate;
+font-family: 'Ubuntu', sans-serif;
+color: #00a4a2;
+font-size: 48px;
+font-size: 4.8rem;
+font-weight: bold;
+position: absolute;
+text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+top: 50px; }
+
+h1:before {
+animation: before-glow 2s ease-out infinite alternate;
+border-left: 535px solid transparent;
+border-bottom: 10px solid #00a4a2;
+content: ' ';
+height: 0;
+position: absolute;
+right: -74px;
+top: -10px;
+width: 0; }
+
+h1:after {
+animation: after-glow 2s ease-out infinite alternate;
+border-left: 100px solid transparent;
+border-top: 16px solid #00a4a2;
+content: ' ';
+height: 0;
+position: absolute;
+right: -85px;
+top: 24px;
+transform: rotate(-47deg);
+width: 0; }
+
+
+.stark-login form {
+animation: form-entry 3s ease-in-out;
+background: #111;
+background: linear-gradient(#004746, #111111);
+border: 6px solid #00a4a2;
+box-shadow: 0 0 15px #00fffd;
+border-radius: 5px;
+display: inline-block;
+height: 180px;
+margin: 160px;
+position: relative;
+z-index: 4;
+width: 350px;
+transition: 1s all;
+color: aliceblue;
+font-size: 16px;
+}
+
+.stark-login form:hover {
+border: 6px solid #00fffd;
+box-shadow: 0 0 25px #00fffd;
+transition: 1s all; }
